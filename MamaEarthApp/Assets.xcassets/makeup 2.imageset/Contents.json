@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Charcoal Black Long Stay Kajal Kohl Pencil With_yyt.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,69 @@
+
+<!-- saved from url=(0124)https://pixel.mathtag.com/sync/iframe?mt_uuid=149763ec-9225-4100-a566-efb12999771f&no_iframe=1&mt_adid=243670&source=mathtag -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<script type="text/javascript">
+try {
+   /**/
+(function() {
+    try {
+	var sync_4815162342 = function() {
+this.urls = [
+[0, "https://pixel.mathtag.com/misc/img?mop_seq=0:1&mt_cb=755646&mop_top="],
+[36, "https://i.liadm.com/s/37464?bidder_id=7156&bidder_uuid=149763ec-9225-4100-a566-efb12999771f"],
+[0, "https://pixel.mathtag.com/misc/img?mop_seq=1:1&mt_cb=260982&check=149763ec-9225-4100-a566-efb12999771f&mop_top=36:1676517143|"]
+]
+this.progress = 0;
+	    var self = this;
+	    var tims = "";
+	    var errs = "";
+	    this.sync = function(i) {
+                var e = new Image();
+                var now = new Date();
+            if (e.addEventListener) {
+                e.addEventListener('load', function() {
+                    var temp = new Date().getTime() - now.getTime(); tims += self.urls[i][0]+':'+temp+"|";
+                });
+                e.addEventListener('error', function() {
+                    var temp = new Date().getTime() - now.getTime(); errs += self.urls[i][0]+':'+temp+"|";
+                });
+            }
+		    e.src = self.urls[i][1];
+	    }
+	    this.batch = function(){
+		    for (var i = self.progress; i < self.urls.length; ++i){
+		        self.sync(i);
+		    }
+	    }
+	    this.final = function(){
+            var e = new Image();
+            e.src = self.urls[self.urls.length-1][1]+"&final&timings="+tims+"&errors="+errs;
+	    }
+	    this.some = function(howmany){
+            var count = 0;
+            for (var i = self.progress; i < self.urls.length && count < howmany; ++i){
+                self.sync(i);
+                self.progress++;
+                count++;
+		    }
+	    }
+	}
+	var s_4815162342 = new sync_4815162342();
+	s_4815162342.some(1);
+	setTimeout(function(){s_4815162342.some(2);}, 1000);
+	setTimeout(s_4815162342.batch, 3000);
+	setTimeout(s_4815162342.final, 10000);
+    }
+    catch(ex) {
+	  new Image().src="//pixel.mathtag.com/error/img?error_domain=syncjs&what="+encodeURIComponent(ex.message);
+    }
+})();
+
+}
+catch(ex)
+{
+   new Image().src="//pixel.mathtag.com/error/img?error_domain=wrap_iframe&what="+encodeURIComponent(ex.message);
+}
+</script>
+
+
+</body></html>
